@@ -1,2 +1,2 @@
-# dojutsu-ui
-An UI Framework built on CSS and JS
+# kawaii-ui
+A UI Framework built on CSS and JS
