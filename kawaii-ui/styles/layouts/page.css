@@ -52,6 +52,7 @@ footer {
 }
 
 
+main,
 section {
     background-color: var(--bg-shade2);
 }
