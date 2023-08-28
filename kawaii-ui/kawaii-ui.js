@@ -27,7 +27,7 @@ function viewport() {
 }
 
     viewport();
-    importCSS("./kawaii-ui/styles/kawaii.css");
+    importCSS("./kawaii-ui/kawaii.css");
     importPreJS("./kawaii-ui/scripts/kawaii.js");
 
 async function fetchJSON(from) {

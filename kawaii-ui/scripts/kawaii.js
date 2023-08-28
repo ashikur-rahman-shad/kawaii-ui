@@ -29,7 +29,19 @@ if (popupCloseButton)
         popupClose();
     });
 
-function currentDir(){
+function currentDir() {
     const currentUrl = window.location.href;
-    return currentUrl.substring(0, currentUrl.lastIndexOf('/')) + "/";
+    return currentUrl.substring(0, currentUrl.lastIndexOf("/")) + "/";
+}
+
+function id(id){
+    return document.getElementById(id);
+}
+
+function input(ID) {
+    return id(ID).value;
+}
+
+function output(ID, value){
+    id(ID).innerHTML = value;
 }

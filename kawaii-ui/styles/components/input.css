@@ -1,0 +1,15 @@
+input,
+button {
+    background-color: var(--bg-shade1);
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    padding: 4px;
+    color: var(--font-color);
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+button {
+    padding: 4px 10px;
+}

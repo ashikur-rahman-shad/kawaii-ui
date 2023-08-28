@@ -1,0 +1,19 @@
+[large],
+[size-large] {
+    width: 100%;
+    max-width: var(--container-large);
+    display: inline-block;
+}
+
+[medium],
+[size-medium] {
+    width: 100%;
+    max-width: var(--container-medium);
+    display: inline-block;
+}
+
+[small],
+[size-small] {
+    width: 100%;
+    max-width: var(--container-small);
+}

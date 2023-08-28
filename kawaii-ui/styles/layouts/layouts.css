@@ -1,0 +1,68 @@
+[centering] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[widen] {
+    width: 100%;
+}
+
+[sharp] {
+    border-radius: 0;
+}
+
+[inline] {
+    width: auto;
+    display: inline;
+}
+
+[left] {
+    text-align: left;
+}
+
+[right] {
+    text-align: right;
+}
+
+[center] {
+    text-align: center;
+}
+
+[justify] {
+    text-align: justify;
+}
+
+[float-left] {
+    float: left;
+}
+
+[float-center] {
+    float: center;
+}
+
+[float-right] {
+    float: right;
+}
+
+[evenly],
+[between] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+[evenly] {
+    justify-content: space-evenly;
+}
+
+[between] {
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+[nowrap] {
+    flex-wrap: nowrap;
+}

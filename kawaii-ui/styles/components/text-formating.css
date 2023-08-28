@@ -1,0 +1,33 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+q,
+address,
+caption,
+figcaption {
+    padding: 10px;
+}
+
+mark {
+    color: var(--bg-shade2);
+    background-color: var(--highlight);
+}
+
+p {
+    text-align: justify;
+}
+
+[normal-text] {
+    font-weight: normal;
+}

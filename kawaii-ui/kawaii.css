@@ -1,0 +1,15 @@
+@import url("./styles/config/colors.css");
+@import url("./styles/config/size.css");
+
+@import url("./styles/common/colors.css");
+@import url("./styles/common/size.css");
+
+@import url("./styles/layouts/page.css");
+@import url("./styles/layouts/popup-overlay.css");
+@import url("./styles/layouts/layouts.css");
+
+@import url("./styles/components/table.css");
+@import url("./styles/components/link.css");
+@import url("./styles/components/input.css");
+@import url("./styles/components/text-formating.css");
+/* @import url("./styles/components"); */

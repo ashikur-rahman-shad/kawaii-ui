@@ -1,0 +1,23 @@
+/* 
+Background */
+[transparent] {
+    background: none;
+}
+
+[shade1] {
+    background-color: var(--bg-shade1);
+}
+
+[shade2] {
+    background-color: var(--bg-shade2);
+}
+
+[shade3] {
+    background-color: var(--bg-shade3);
+}
+
+/* 
+Font Color  */
+[fade] {
+    color: var(--fade);
+}
