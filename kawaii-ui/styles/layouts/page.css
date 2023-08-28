@@ -26,12 +26,16 @@ body {
 
 }
 
-main{ margin: 10px;}
+main {
+    margin: 10px;
+}
 
 header,
 footer {
     width: 100%;
     padding: 10px;
+    box-shadow: 0 0px 40px var(--bg-shade3);
+    background-color: var(--bg-shade2);
 }
 
 
@@ -48,10 +52,24 @@ footer {
 }
 
 
-main,
-header,
-footer {
-    box-shadow: 0 0px 40px var(--bg-shade3);
+section {
     background-color: var(--bg-shade2);
+}
 
+main>*:first-child {
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+}
+
+/* Apply border radius to the last child */
+main>*:last-child {
+    border-radius: 0 0 10px 10px;
+    margin-top: 0;
+}
+
+/* Apply sharp corners to children in between */
+main>*:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }

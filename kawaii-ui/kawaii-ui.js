@@ -26,10 +26,6 @@ function viewport() {
     document.head.appendChild(metaTag);
 }
 
-    viewport();
-    importCSS("./kawaii-ui/kawaii.css");
-    importPreJS("./kawaii-ui/scripts/kawaii.js");
-
 async function fetchJSON(from) {
     try {
         const response = await fetch(from);
@@ -50,4 +46,10 @@ async function fetchText(from) {
         console.log("Error: ", error);
         throw error; // Re-throw the error so it can be caught in the calling function if needed.
     }
+}
+
+{
+    viewport();
+    importCSS("https://ashikur-rahman-shad.github.io/kawaii-ui/kawaii-ui/kawaii.css");
+    importPreJS("https://ashikur-rahman-shad.github.io/kawaii-ui/kawaii-ui/scripts/kawaii.js");
 }
