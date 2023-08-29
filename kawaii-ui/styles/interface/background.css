@@ -1,7 +1,10 @@
-/* 
-Background */
+/* BG colors */
 [transparent] {
     background: none;
+}
+
+[semi-transparent] {
+    background-color: var(--semi-transparent);
 }
 
 [shade1] {
@@ -16,8 +19,9 @@ Background */
     background-color: var(--bg-shade3);
 }
 
-/* 
-Font Color  */
-[fade] {
-    color: var(--fade);
+/* BG Image layout */
+
+[tiles]{
+    background-attachment: scroll;
+    background-size:auto;
 }
