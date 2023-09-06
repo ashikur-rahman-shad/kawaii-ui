@@ -34,7 +34,7 @@ header,
 footer {
     width: 100%;
     padding: 10px;
-    box-shadow: 0 0px 40px var(--bg-shade3);
+    box-shadow: 0 0px 40px var(--shadow);
     background-color: var(--bg-shade2);
 }
 
