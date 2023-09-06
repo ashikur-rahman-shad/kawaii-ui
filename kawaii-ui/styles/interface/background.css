@@ -1,4 +1,9 @@
 /* BG colors */
+
+[blur]{
+    backdrop-filter: blur(50px);
+}
+
 [transparent] {
     background: none;
 }
