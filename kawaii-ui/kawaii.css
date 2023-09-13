@@ -2,6 +2,7 @@
 @import url("./styles/config/size.css");
 
 @import url("./styles/common/background.css");
+@import url("./styles/common/spacing.css");
 
 @import url("./styles/layouts/page.css");
 @import url("./styles/layouts/popup-overlay.css");
@@ -11,6 +12,7 @@
 @import url("./styles/components/input.css");
 @import url("./styles/components/text-formating.css");
 
+@import url("./styles/kawaii-buttons/toggleTheme.css");
 
 @import url("./styles/interface/background.css");
 @import url("./styles/interface/size.css");

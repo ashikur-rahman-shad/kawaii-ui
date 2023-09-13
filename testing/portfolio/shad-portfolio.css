@@ -1,0 +1,7 @@
+body[theme=dark] {
+    background-image: url(./img/brown-mountains-aerial-view-mountain-range-landscape-7952x5304-2837.jpg);
+}
+
+body[theme=light] {
+    background-image: url(./img/pxfuel.jpg);
+}

@@ -8,6 +8,8 @@
     clear: both;
 
     transition: .3s;
+
+
 }
 
 body {
@@ -31,11 +33,18 @@ main {
 }
 
 header,
+footer,
+main {
+    background-color: var(--semi-transparent);
+    backdrop-filter: blur(50px);
+}
+
+header,
 footer {
     width: 100%;
     padding: 10px;
     box-shadow: 0 0px 40px var(--shadow);
-    background-color: var(--bg-shade2);
+    /* background-color: var(--bg-shade2); */
 }
 
 
@@ -51,26 +60,33 @@ footer {
     border-bottom-right-radius: 0;
 }
 
-
-main,
 section {
-    background-color: var(--bg-shade2);
+    display: block;
+    box-sizing: content-box;
+    overflow: auto;
 }
 
-main>*:first-child {
+main>section:first-child {
     border-radius: 10px 10px 0 0;
-    margin-bottom: 0;
+
 }
 
 /* Apply border radius to the last child */
-main>*:last-child {
+main>section:last-child {
     border-radius: 0 0 10px 10px;
-    margin-top: 0;
+
 }
 
 /* Apply sharp corners to children in between */
-main>*:not(:first-child):not(:last-child) {
+main>section:not(:first-child):not(:last-child) {
     border-radius: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+
+}
+
+
+body:has(header):has(footer):has(main) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }

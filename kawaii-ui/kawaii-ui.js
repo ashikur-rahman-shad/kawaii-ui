@@ -50,6 +50,10 @@ async function fetchText(from) {
 
 {
     viewport();
-    importCSS("https://ashikur-rahman-shad.github.io/kawaii-ui/kawaii-ui/kawaii.css");
-    importPreJS("https://ashikur-rahman-shad.github.io/kawaii-ui/kawaii-ui/scripts/kawaii.js");
+    importCSS(
+        "https://ashikur-rahman-shad.github.io/kawaii-ui/kawaii-ui/kawaii.css"
+    );
+    importPreJS(
+        "https://ashikur-rahman-shad.github.io/kawaii-ui/kawaii-ui/scripts/kawaii.js"
+    );
 }

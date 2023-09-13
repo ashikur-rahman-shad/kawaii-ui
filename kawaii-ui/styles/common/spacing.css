@@ -1,0 +1,7 @@
+[padding] {
+    padding: var(--padding);
+}
+
+[paddings]>* {
+    padding: var(--padding);
+}

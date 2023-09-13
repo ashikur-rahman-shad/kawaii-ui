@@ -1,7 +1,11 @@
 /* BG colors */
 
-[blur]{
+[blur] {
     backdrop-filter: blur(50px);
+}
+
+[clear] {
+    backdrop-filter: none;
 }
 
 [transparent] {
@@ -26,7 +30,7 @@
 
 /* BG Image layout */
 
-[tiles]{
+[tiles] {
     background-attachment: scroll;
-    background-size:auto;
+    background-size: auto;
 }

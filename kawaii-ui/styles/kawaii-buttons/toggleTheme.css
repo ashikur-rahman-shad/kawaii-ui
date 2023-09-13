@@ -1,0 +1,3 @@
+button[toggleTheme]::before {
+    content: "\2600/\263D";
+}
