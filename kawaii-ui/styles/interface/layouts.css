@@ -1,10 +1,3 @@
-[centering] {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 [widen] {
     width: 100%;
 }
@@ -46,11 +39,28 @@
     float: right;
 }
 
+[flex] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+[flex="row"] {
+    flex-direction: row;
+}
+
+[flex="col"],
+[flex="column"] {
+    flex-direction: column;
+}
+
+
 [evenly],
 [between] {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 [evenly] {

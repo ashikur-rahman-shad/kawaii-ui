@@ -1,5 +1,6 @@
 * {
     font-family: Verdana, sans-serif;
+    /* word-break: break-all; */
     text-align: center;
     align-content: center;
     vertical-align: middle;
@@ -8,8 +9,6 @@
     clear: both;
 
     transition: .3s;
-
-
 }
 
 body {
