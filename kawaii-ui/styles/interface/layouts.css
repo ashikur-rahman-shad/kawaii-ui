@@ -11,6 +11,10 @@
     display: inline;
 }
 
+[inline-block] {
+    display: inline-block;
+}
+
 [left] {
     text-align: left;
 }

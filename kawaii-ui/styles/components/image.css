@@ -1,0 +1,27 @@
+img{
+    object-fit: cover;
+}
+
+img[type] {
+    width: 100%;
+}
+
+img[type="favicon"] {
+    max-width: 16px;
+    aspect-ratio: 1/1;
+}
+
+img[type="icon"] {
+    max-width: 64px;
+    aspect-ratio: 1/1;
+}
+
+img[type="thumbnail"] {
+    max-width: 300px;
+    aspect-ratio: 16/9;
+}
+
+img[type="preview"] {
+    max-width: 500px;
+    aspect-ratio: 3/2;
+}

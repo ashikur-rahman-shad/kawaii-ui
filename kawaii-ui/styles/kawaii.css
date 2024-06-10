@@ -1,0 +1,36 @@
+@import url("./config/themes.css");
+@import url("./config/size.css");
+
+@import url("./common/background.css");
+@import url("./common/border-spacing.css");
+
+@import url("./layouts/page.css");
+@import url("./layouts/popup-overlay.css");
+
+@import url("./components/table.css");
+@import url("./components/image.css");
+@import url("./components/link.css");
+@import url("./components/input.css");
+@import url("./components/text-formating.css");
+
+@import url("./kawaii-buttons/toggleTheme.css");
+
+@import url("./interface/background.css");
+@import url("./interface/size.css");
+@import url("./interface/layouts.css");
+@import url("./interface/font.css");
+
+
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiZQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*{
+    font-family: 'Oswald' !important;
+}
+
