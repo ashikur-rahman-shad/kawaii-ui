@@ -1,9 +1,8 @@
 # kawaii-ui
 
-A UI Framework built on CSS and JS
+A JS library and CSS framework designed to make beginners fall in love with programming. Build web apps with a Material UI and minimal stylish design without writing a single line of CSS!
 
 [HomePage](https://ashikur-rahman-shad.github.io/kawaii-ui/)
-
 
 
 >Just add the following lines in your header, and see the magic!
