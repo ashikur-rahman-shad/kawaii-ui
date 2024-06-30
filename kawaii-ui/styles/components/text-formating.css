@@ -17,6 +17,7 @@ address,
 caption,
 figcaption {
     padding: 10px;
+    color: var(--font-color);
 }
 
 mark {
