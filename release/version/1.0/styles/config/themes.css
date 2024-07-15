@@ -1,0 +1,32 @@
+:root {
+    --fade: #656565;
+    --shadow: #121212;
+
+    --bg-shade1: #212121;
+    --bg-shade2: #151515;
+    --bg-shade3: #000;
+    --font-color: #FFF;
+    --highlight: rgb(255, 0, 85);
+    --semi-transparent: rgba(21, 21, 21, 0.5);
+}
+
+[light],
+[theme="light"] {
+    --bg-shade1: #dedede;
+    --bg-shade2: #f5f5f5;
+    --bg-shade3: #FFF;
+    --shadow: #55555555;
+
+    --font-color: #222;
+    --semi-transparent: rgba(245, 245, 245, 0.5);
+}
+
+[dark],
+[theme="dark"] {
+    --bg-shade1: #212121;
+    --bg-shade2: #151515;
+    --bg-shade3: #000;
+    --font-color: #FFF;
+    --highlight: rgb(255, 0, 85);
+    --semi-transparent: rgba(21, 21, 21, 0.5);
+}

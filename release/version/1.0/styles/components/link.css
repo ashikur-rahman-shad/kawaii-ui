@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+    color: var(--highlight);
+    /* font-size: 16px; */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff9393;
+    /* text-decoration: underline; */
+    text-shadow: 0px 0px 3px rgb(255, 75, 75);
+    cursor: pointer;
+}
+
+a[flat] {
+    color: var(--font-color);
+}

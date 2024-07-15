@@ -1,0 +1,36 @@
+/* BG colors */
+
+[blur] {
+    backdrop-filter: blur(50px);
+}
+
+[clear] {
+    backdrop-filter: none;
+}
+
+[transparent] {
+    background: none;
+}
+
+[semi-transparent] {
+    background-color: var(--semi-transparent);
+}
+
+[shade1] {
+    background-color: var(--bg-shade1);
+}
+
+[shade2] {
+    background-color: var(--bg-shade2);
+}
+
+[shade3] {
+    background-color: var(--bg-shade3);
+}
+
+/* BG Image layout */
+
+[tiles] {
+    background-attachment: scroll;
+    background-size: auto;
+}

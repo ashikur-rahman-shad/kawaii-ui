@@ -1,0 +1,82 @@
+[widen] {
+    width: 100%;
+}
+
+[sharp] {
+    border-radius: 0;
+}
+
+[inline] {
+    width: auto;
+    display: inline;
+}
+
+[inline-block] {
+    display: inline-block;
+}
+
+[left] {
+    text-align: left;
+}
+
+[right] {
+    text-align: right;
+}
+
+[center] {
+    text-align: center;
+}
+
+[justify] {
+    text-align: justify;
+}
+
+[float-left] {
+    float: left;
+}
+
+[float-center] {
+    float: center;
+}
+
+[float-right] {
+    float: right;
+}
+
+[flex] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+[flex="row"] {
+    flex-direction: row;
+}
+
+[flex="col"],
+[flex="column"] {
+    flex-direction: column;
+}
+
+
+[evenly],
+[between] {
+    display: flex;
+}
+
+[evenly] {
+    justify-content: space-evenly;
+}
+
+[between] {
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+[nowrap] {
+    flex-wrap: nowrap;
+}
