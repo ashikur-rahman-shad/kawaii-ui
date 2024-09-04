@@ -53,36 +53,35 @@ async function fetchText(from) {
 }
 
 
-const overlay = document.getElementsByClassName("overlay")[0];
-const popup = document.getElementsByClassName("popup-container")[0];
-const popupContent = document.getElementsByClassName("popup-content")[0];
-const popupCloseButton = document.getElementsByClassName("popup-close")[0];
+
 
 function delay(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function popupClose() {
+async function popupClose(popup_id) {
+    let overlay = document.getElementById(`popup-overlay-${popup_id}`);
+    let popup = document.getElementById(`popup-container-${popup_id}`);
+    let popupContent = document.getElementById(`popup-content-${popup_id}`);
     popupContent.classList.remove("maximized");
     popup.classList.remove("maximized");
     await delay(500);
-    popupContent.innerHTML = "";
+    // popupContent.innerHTML = "";
     overlay.style.display = "none";
+    $('body')[0].removeChild(overlay);
 }
 
-async function popupShow() {
-    popupContent.innerHTML = "";
+async function popupShow(popup_id) {
+    let overlay = document.getElementById(`popup-overlay-${popup_id}`);
+    let popup = document.getElementById(`popup-container-${popup_id}`);
+    let popupContent = document.getElementById(`popup-content-${popup_id}`);
+    // popupContent.innerHTML = "";
     overlay.style.display = "flex";
     await delay(10);
     popup.classList.add("maximized");
     popupContent.classList.add("maximized");
     await delay(500);
 }
-
-if (popupCloseButton)
-    popupCloseButton.addEventListener("click", () => {
-        popupClose();
-    });
 
 function currentDir() {
     const currentUrl = window.location.href;
@@ -109,17 +108,37 @@ function toggleTheme(theme) {
     else body.setAttribute("theme", "dark");
 }
 
-function clickElement(element, attribute, resultFunction) {
-    const elements = document.querySelectorAll(`${element}[${attribute}]`);
-    elements.forEach((el) => {
-        let q = el.getAttribute("onclick");
+function elementClick(selector, resultFunction) {
+    const elements = document.querySelectorAll(`${selector}`);
+    elements.forEach((element) => {
+        let q = element.getAttribute("onclick");
         if (q == null) q = "";
-        el.setAttribute("onclick", q + ";" + resultFunction);
+        element.setAttribute("onclick", q + ";" + resultFunction);
     });
 }
 
-clickElement("button", "toggleTheme", "toggleTheme()");
+function elementAppend(selector, content) {
+    const elements = document.querySelectorAll(`${selector}`);
+    elements.forEach((element) => {
+        element.innerHTML += content;
+    });
+}
 
+elementClick('button[toggleTheme]', "toggleTheme()");
+elementClick('button[sidebarShow="right"]', "sidebarShow('right')");
+elementClick('button[sidebarShow="left"]', "sidebarShow('left')");
+elementClick('button[sidebarToggle="left"]', "sidebarToggle('left')");
+elementClick('button[sidebarToggle="right"]', "sidebarToggle('right')");
+
+elementAppend(
+    'sidebar[position="left"]',
+    `<div  class="popup-close-right" onclick="sidebarClose('left')">×</div>`
+);
+
+elementAppend(
+    'sidebar[position="right"]',
+    `<div  class="popup-close-left" onclick="sidebarClose('right')">×</div>`
+);
 
 function GET() {
     var queryString = window.location.search.slice(1);

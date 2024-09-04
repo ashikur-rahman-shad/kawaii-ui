@@ -1,0 +1,15 @@
+[toggleTheme],[sidebarToggle], [sidebarShow], [sidebarHide]{
+    font-family: var(--symbol-font);
+}
+
+[toggleTheme]::before {
+    content: "\2600/\263D";
+}
+
+[sidebarToggle]::before, [sidebarShow]::before, [sidebarHide]::before {
+    content: "󰍜";  
+}
+
+[sidebarToggle], [sidebarShow], [sidebarHide]{
+    display: inline-block;
+}

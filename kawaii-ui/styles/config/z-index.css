@@ -1,0 +1,15 @@
+main{
+    z-index: 0;
+}
+
+header, footer{
+    z-index: 100;
+}
+
+sidebar{
+    z-index: 200;
+}
+
+overlay{
+    z-index: 1000;
+}

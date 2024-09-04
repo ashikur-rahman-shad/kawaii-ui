@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: var(--bg-shade3);
+    background-color: rgba(var(--bg-shade3), var(--opacity))
     color: var(--font-color);
     text-align: center;
 
@@ -44,7 +44,7 @@ footer {
     width: 100%;
     padding: 10px;
     box-shadow: 0 0px 40px var(--shadow);
-    /* background-color: var(--bg-shade2); */
+    /* background-color: rgba(var(--bg-shade2), var(--opacity)) */
 }
 
 

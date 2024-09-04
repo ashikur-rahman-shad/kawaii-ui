@@ -1,0 +1,11 @@
+.normal-text {
+    font-weight: normal;
+}
+
+.bold, .b{
+    font-weight: bold;
+}
+
+.italic, .i{
+    font-style: italic;
+}

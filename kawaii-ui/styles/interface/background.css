@@ -1,36 +1,36 @@
 /* BG colors */
 
-[blur] {
+.blur {
     backdrop-filter: blur(50px);
 }
 
-[clear] {
+.clear-bg {
     backdrop-filter: none;
 }
 
-[transparent] {
+.transparent {
     background: none;
 }
 
-[semi-transparent] {
-    background-color: var(--semi-transparent);
+.semi-transparent {
+    --opacity: var(--semi-transparent);
 }
 
-[shade1] {
-    background-color: var(--bg-shade1);
+.shade1 {
+    background-color: rgba(var(--bg-shade1), var(--opacity));
 }
 
-[shade2] {
-    background-color: var(--bg-shade2);
+.shade2 {
+    background-color: rgba(var(--bg-shade2), var(--opacity));
 }
 
-[shade3] {
-    background-color: var(--bg-shade3);
+.shade3 {
+    background-color: rgba(var(--bg-shade3), var(--opacity));
 }
 
 /* BG Image layout */
 
-[tiles] {
+.tiles {
     background-attachment: scroll;
     background-size: auto;
 }

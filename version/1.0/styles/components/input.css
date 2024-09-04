@@ -1,6 +1,6 @@
 input,
 button, textarea,select {
-    background-color: var(--bg-shade1);
+    background-color: rgba(var(--bg-shade1), var(--opacity))
     border-radius: 6px;
     border: none;
     text-align: center;

@@ -17,15 +17,15 @@
 }
 
 [shade1] {
-    background-color: var(--bg-shade1);
+    background-color: rgba(var(--bg-shade1), var(--opacity))
 }
 
 [shade2] {
-    background-color: var(--bg-shade2);
+    background-color: rgba(var(--bg-shade2), var(--opacity))
 }
 
 [shade3] {
-    background-color: var(--bg-shade3);
+    background-color: rgba(var(--bg-shade3), var(--opacity))
 }
 
 /* BG Image layout */

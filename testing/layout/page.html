@@ -1,55 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../kawaii-ui/styles/kawaii.css"
-    <script src="../../kawaii-ui/scripts/kawaii2.js" defer></script>
-    <title>Simple Page with Sidebars</title>
-    <style>
-        body {
-            display: flex;
-            margin: 0;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-        }
-        .sidebar {
-            width: 200px;
-            background-color: #212121;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .content {
-            flex: 1;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        sidebar {
-            display: block;
-            background-color: lightblue;
-            padding: 10px;
-            margin: 10px;
-        }
-    </style>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="../../kawaii-ui/styles/kawaii.css">
+    <script src="../../kawaii-ui/scripts/kawaii2.js"
+        defer></script>
+    <script src="./float.js" defer></script>
+    <title>Page Layout test</title>
 </head>
-<body>
-    <header>
+
+<body theme="dark" style="background-image: url('./img/mw.jpg');">
+
+    <header class="row between semi-transparent">
+        <button sidebarToggle="left"></button>
         <h1>A page</h1>
+        <button toggleTheme></button>
+        <button sidebarToggle="right"></button>
     </header>
-    <sidebar>
+
+    <sidebar position="left">
         <h2>Left Sidebar</h2>
+        <p><a
+                onclick="popupShow(popup(`<h1>Ami Bhalo</h1>Saith Walidiator`))">Popup</a>
+        </p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
         <p>Some content here</p>
     </sidebar>
-    <main class="content main-content">
-        <h1>Main Content</h1>
-        <p>This is the main content area.</p>
-    </main>
-    <sidebar>
+
+    <sidebar position="right" class="hide semi-transparent blur">
         <h2>Right Sidebar</h2>
-        <p>Some content here</p>
+        <input name="email" type="email" placeholder="Enter your email">
+        <input name="password" type="password" placeholder="Enter your password">
     </sidebar>
-    <footer>
+
+    <main class="semi-transparent">
+        <h1>Main Content</h1>
+        <p>This is the main content area. You are the best
+        </p>
+
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+        <p>Some content here</p>
+    </main>
+
+    <footer class="semi-transparent">
         <h5>by Shad</h5>
     </footer>
+
 </body>
+
 </html>

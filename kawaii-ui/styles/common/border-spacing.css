@@ -1,33 +1,33 @@
-[padding], [paddings]>* {
+.padding, .paddings>* {
     padding: var(--padding);
 }
 
-[margin], [margins]>* {
+.margin, .margins>* {
     margin: var(--margin);
 }
 
-[no-padding], [no-paddings]>*{
+.no-padding, .margin>*{
     padding: 0;
 }
 
-[no-margin], [no-margins]>* {
+.no-margin, .no-margins>* {
     margin: 0;
 }
 
-[no-margin="sides"], [no-margins="sides"]>* {
+/* [no-margin="sides"], [no-margins="sides"]>* {
     margin: 0;
-}
+} */
 
-[sharp], [sharps]>*{
+.sharp, .sharps>*{
     border-radius: 0;
 }
 
-[round-edge]{
+.round-edge{
     border-radius: 10px;
     overflow: hidden;
 }
 
-[no-decors]>*, [no-decors]>*>*, [no-decors]>*>*>*{
+.no-decors>*, .no-decors>*>*, .no-decors>*>*>*{
     background: none;
     border: none;
     outline: none;

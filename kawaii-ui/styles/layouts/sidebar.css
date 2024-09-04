@@ -1,0 +1,55 @@
+sidebar {
+    display: block;
+    background-color: rgba(var(--sidebar-bg),var(--opacity)) ;
+    padding: 10px;
+    margin: 0px;
+    top: 0;
+    border-radius: 0;
+    align-content: start;
+    height: calc(100%);
+    overflow: auto;
+    width: 100%;
+    max-width: var(--sidebar-width);
+    transition: width 0.33s linear;
+    position: fixed;
+    box-shadow: 0 0px 40px var(--shadow);
+    /* background-color: rgba(); */
+}
+
+[position="left"] {
+    left: 0px;
+    /* border-right: 1px solid rgba(var(--bg-shade2), var(--opacity)) */
+
+}
+
+[position="right"] {
+    right: 0px;
+    /* border-left: 1px solid black; */
+}
+
+sidebar.hide {
+    /* transform: scaleX(0) !important; */
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+sidebar.hide>* {
+    opacity: 0;
+}
+
+@media (max-width: 440px) {
+    sidebar {
+        max-width: none;
+    }
+}
+
+@media (min-width: 710px) {
+    body:has(sidebar[position="left"]):has(:not(sidebar[type])):not(:has(sidebar[position="left"].hide)) {
+        padding-left: var(--sidebar-width);
+    }
+
+    body:has(sidebar[position="right"]):has(:not(sidebar[type])):not(:has(sidebar[position="right"].hide)) {
+        padding-right: var(--sidebar-width);
+    }
+}
