@@ -10,7 +10,7 @@ table,
 th,
 td {
     border: 1px solid rgb(127, 127, 127);
-    background-color: var(--bg-shade2);
+    background-color: rgba(var(--bg-shade2), var(--opacity));
 }
 
 td {
@@ -21,7 +21,7 @@ td {
 }
 
 th {
-    background-color: var(--bg-shade1);
+    background-color: rgba(var(--bg-shade1), var(--opacity));
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 0;

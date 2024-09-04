@@ -21,7 +21,7 @@ figcaption {
 }
 
 mark {
-    color: var(--bg-shade2);
+    color: rgba(var(--bg-shade2), var(--opacity))
     background-color: var(--highlight);
 }
 

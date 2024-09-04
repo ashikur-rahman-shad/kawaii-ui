@@ -10,32 +10,35 @@
     border-radius: 10px;
     clear: both;
 
-    transition: .3s;
+    transition: all 0.33s linear;
 }
 
 body {
-    background-color: var(--bg-shade3);
+    background-color: rgba(var(--bg-shade3), var(--opacity));
     color: var(--font-color);
     text-align: center;
 
     font-size: 15px;
 
-    transition: background 0s;
-
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    background-attachment: fixed;
 
+    /* background: fixed no-repeat cover center; */
+
+    transition: margin 0.33s linear, padding 0.33s linear;
 }
 
 main {
     margin: 10px;
+    background-color: rgba(var(--bg-shade1), var(--opacity));
+
 }
 
 header,
 footer,
 main {
-    background-color: var(--semi-transparent);
     backdrop-filter: blur(32px);
 }
 
@@ -43,21 +46,24 @@ header,
 footer {
     width: 100%;
     padding: 10px;
+    background-color: rgba(var(--bg-shade3), var(--opacity));
     box-shadow: 0 0px 40px var(--shadow);
-    /* background-color: var(--bg-shade2); */
+    /* background-color: rgba(var(--bg-shade2), var(--opacity)) */
+    position: sticky;;
 }
-
 
 header {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    top: 0;
 }
 
 footer {
     margin-top: 10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    /* bottom: 0; */
 }
 
 section {
@@ -83,10 +89,10 @@ main>section:not(:first-child):not(:last-child) {
 
 }
 
-
 body:has(header):has(footer):has(main) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
+

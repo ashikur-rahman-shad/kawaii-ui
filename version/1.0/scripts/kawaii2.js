@@ -56,7 +56,7 @@ async function fetchText(from) {
 const overlay = document.getElementsByClassName("overlay")[0];
 const popup = document.getElementsByClassName("popup-container")[0];
 const popupContent = document.getElementsByClassName("popup-content")[0];
-const popupCloseButton = document.getElementsByClassName("popup-close")[0];
+const popupCloseButton = document.getElementsByClassName("popup-close-right")[0];
 
 function delay(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
